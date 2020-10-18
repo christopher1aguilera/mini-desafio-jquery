@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 1</title>
+</head>
+
+<body>
+    <div>
+        <div>
+            <div style="background-color:red;border: 1px solid gray;margin:10px;padding: 10px">
+                <span id="cambiar">haz click!!!</span>
+            </div>
+            <div id="frase" style="background-color:white;border: 1px solid gray;margin:10px;padding: 10px">
+                <span>Cambiame</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+    $("#cambiar").click(function () {
+        $("#frase").css({"background-color": "green", "font-size": "200%", "height": "100px"})
+    })
+})
+</script>
+</html>
